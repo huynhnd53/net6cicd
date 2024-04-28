@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  webapi:
+    image: net6cicd
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5333:80"
+ 
